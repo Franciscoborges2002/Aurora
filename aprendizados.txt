@@ -1,0 +1,16 @@
+TSX = TYPESCRIPT + XML
+
+Taillwind fazer um css no proprio codigo no react
+
+CMS = Content Management System
+
+Headless CMS: trás apenas o painel de ADMIN(dados fornecidos através de uma API REST  ou GraphQL)
+
+No fim do Ignite com esta estrategia vai ser mais fácil construir aplicações em que o conteudo é gerido pelo autor(empresa)
+
+GraphQL:
+    -Query: Buscar dados
+    -Mutation: Criar, alterar ou deletar dados
+
+Overfitting, o backend retorna mais dados do que o frontend precisa
+Underfitting, o backend retorna menos dados do que o frontend precisa
