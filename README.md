@@ -4,7 +4,13 @@ I made this project in the event of [RocketSeat](https://www.rocketseat.com.br/)
 
 - [x] First Lesson
 - [x] Second Lesson
-- [ ] Third Lesson
+- [x] Third Lesson
 - [ ] Fourth Lesson
 - [ ] Fifth Lesson
 - [ ] Extra Mile
+    - [ ] Placeholder when no video is clicked
+    - [ ] Main page to Aurora
+    - [ ] Politicas de Privacidade Page
+    - [ ] Loading Page
+- [ ] Custom Video Player
+- [ ] Make App Responsive

@@ -3,11 +3,16 @@ No className vamos usar o tailwind css para dar uma estilização
 mais costumizada, do proprio ficheiro tsx
 */
 
+import { ApolloProvider } from "@apollo/client"
+import { client } from "./lib/apollo"
 import { Event } from "./pages/Event"
+import { Router } from "./Router"
 
 function App() {
   return (
-    <Event />
+    <ApolloProvider client={client}>
+    <Router />
+    </ApolloProvider>
   )
 }
 
