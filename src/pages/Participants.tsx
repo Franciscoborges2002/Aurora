@@ -1,4 +1,5 @@
 import { gql, useQuery } from "@apollo/client";
+import { Users } from "phosphor-react";
 import { Header } from "../components/Header";
 import { Participant } from "../components/Participant";
 
@@ -21,13 +22,13 @@ export function Participants(){
     var numParticipantes = 0;
 
     return(
-        <div>
+        <div className="min-h-screen bg-blur bg-cover bg-no-repeat">
             <Header />
-            <div className="flex flex-col gap-12">
+            <div className="flex flex-col gap-12 pb-10">
                 <div className="flex items-center justify-center pt-20">
                     <h1 className="font-bold uppercase text-5xl">Participantes:</h1>
                 </div>
-                <div className="flex flex-col gap-2 items-center">
+                <div className="flex flex-col gap-2 items-center select-none">
                     {data?.subscribers.map(subscriber =>{
                         numParticipantes++;
                         return(
@@ -38,8 +39,8 @@ export function Participants(){
                     })}
                 </div>
             </div>
-            <div className="flex items-end justify-end font-extralight text-base ">
-                Número de Participantes: {numParticipantes}
+            <div className="flex items-center justify-center text-2xl">
+                <Users size={32} /> {numParticipantes}
             </div>
         </div>
     );

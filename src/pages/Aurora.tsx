@@ -23,10 +23,10 @@ export function Aurora() {
                     <a href="/event/ignite-lab/subscribe" className="border border-colors-gray-600 rounded w-full h-100  bg-igniteLabWallpaper hover:border-colors-green-500 transition-colors flex items-center justify-center ">
                         <span className="font-bold text-2xl text-colors-blue-500">Ignite Lab</span>
                     </a>
-                    <a href="/event/ignite-lab/subscribe" className="border border-colors-gray-600 rounded w-full h-100  bg-igniteLabWallpaper hover:border-colors-green-500 transition-colors flex items-center justify-center ">
+                    <a href="#" className="border border-colors-gray-600 rounded w-full h-100  bg-igniteLabWallpaper hover:border-colors-green-500 transition-colors flex items-center justify-center ">
                         <span className="font-bold text-2xl text-colors-red-500">Red Run Code</span>
                     </a>
-                    <a href="/event/ignite-lab/subscribe" className="border border-colors-gray-600 rounded w-full h-100  bg-igniteLabWallpaper hover:border-colors-green-500 transition-colors flex items-center justify-center ">
+                    <a href="#" className="border border-colors-gray-600 rounded w-full h-100  bg-igniteLabWallpaper hover:border-colors-green-500 transition-colors flex items-center justify-center ">
                         <span className="font-bold text-2xl text-colors-orange-500">Phoenix CSS</span>
                     </a>
                 </div>
