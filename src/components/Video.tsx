@@ -4,6 +4,9 @@ import { gql, useQuery } from "@apollo/client";
 import { LogoEvent } from "./LogoEvent";
 
 import '@vime/core/themes/default.css'; 
+import { Loader } from "./Loader";
+import { Link } from "react-router-dom";
+import { Footer } from "./Footer";
  
 const GET_LESSON_BY_SLUG_QUERY = gql`
     query GetLessonBySlug($slug: String) {
@@ -47,8 +50,12 @@ export function Video (props: VideoProps){
 
     if(!data){
         return(
-            <div className="flex-1">
-                <p>Carregando...</p>
+            <div className="flex flex-1 items-center justify-center">
+                <div className="flex flex-col items-center justify-center gap-3">
+                    <p className="font-bold text-2xl">A carregar aula.</p>
+                    <Loader />
+                </div>
+                
             </div>
         )
     }
@@ -88,12 +95,12 @@ export function Video (props: VideoProps){
                     </div>
 
                     <div className="flex flex-col gap-4">
-                        <a href="#" className="p-4 text-sm bg-colors-green-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-colors-green-700 transition-colors">
+                        <a href="#" className="p-4 text-sm bg-colors-green-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-colors-green-700 transition-colors focus:opacity-50">
                             <DiscordLogo size={24} />
                             Comunidade do Discord
                         </a>
 
-                        <a href="#" className="p-4 text-sm border border-colors-blue-500 text-colors-blue-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-colors-blue-500 hover:text-colors-gray-900 transition-colors">
+                        <a href="#" className="p-4 text-sm border border-colors-blue-500 text-colors-blue-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-colors-blue-500 hover:text-colors-gray-900 transition-colors focus:opacity-50">
                             <Lightning size={24} />
                             Acesse o desafio
                         </a>
@@ -131,17 +138,7 @@ export function Video (props: VideoProps){
                     </a>
                 </div>
             </div>
-            <footer className="w-full py-5 flex justify-between bg-colors-gray-900 border-t-2 border-colors-gray-600 p-20 text-colors-gray-300">
-                <div className="flex flex-row items-center justify-center gap-5">
-                    <LogoEvent />
-                    <span>
-                        Made in Ignite Lab by <a href="https://github.com/Franciscoborges2002" className="text-colors-green-300 hover:text-colors-green-700 transition-colors">Francisco Borges</a>.
-                    </span>
-                </div>
-                <span>
-                    <a href="pp" className="text-colors-gray-300 hover:text-colors-green-300 transition-colors"> Políticas de privacidade.</a>
-                </span>
-            </footer>
+            <Footer />
         </div>
     )
 }

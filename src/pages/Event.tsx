@@ -1,11 +1,9 @@
+import { CircleWavyWarning } from "phosphor-react";
 import { useParams } from "react-router-dom";
+import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { Sidebar } from "../components/Sidebar";
 import { Video } from "../components/Video";
-
-interface Params{
-    slug: string;
-}
 
 export function Event() {
     const { slug } = useParams<{slug : string}>();
@@ -16,7 +14,12 @@ export function Event() {
             <main className="flex flex-1">
                 { slug 
                 ? <Video lessonSlug={ slug } /> 
-                : <div className="flex-1"/>}
+                : <div className="flex-1 flex flex-col gap-10 items-center justify-center">
+                    <span className="font-medium text-2xl">Nenhuma aula foi selecionada.</span>
+                    <CircleWavyWarning size={48} className="text-colors-green-300" />
+                    <Footer />
+                  </div>   
+                  }
                 <Sidebar />               
             </main>
         </div>

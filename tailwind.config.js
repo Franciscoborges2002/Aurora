@@ -4,6 +4,10 @@ module.exports = {
     './src/**/*.tsx'
   ],
   theme: {
+    backgroundImage: {
+      blur: 'url(/src/assets/blur-background.png)',
+      igniteLabWallpaper: 'url(/src/assets/ignite-lab-wallpaper.png)'
+    },
     fontFamily: {
       sans: 'Roboto, sans-serif',
     },
@@ -34,6 +38,9 @@ module.exports = {
         },
         black: {
           900: '#000000'
+        },
+        white: {
+          100: '#FFFFFF'
         }
       }
     }

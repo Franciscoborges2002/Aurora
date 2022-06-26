@@ -14,3 +14,5 @@ GraphQL:
 
 Overfitting, o backend retorna mais dados do que o frontend precisa
 Underfitting, o backend retorna menos dados do que o frontend precisa
+
+no useState vamos usar um conceito chamado imutabilidade que chamamos a função set__ para criar um novo valor para a var em vez de alterar o valor
