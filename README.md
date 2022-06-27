@@ -56,8 +56,8 @@ You can see the layout thourh [Figma](https://www.figma.com/community/file/11207
     - [x] Políticas de Privacidade Page protopype
     - [x] Loading Page
     - [x] Participants Page
-- [ ] Custom Video Player
-- [ ] Make App Responsive
+    - [ ] Custom Video Player
+    - [ ] Make App Responsive
 
 ### Start the project <a name="howToStartTheProject"></a>
 Before starting the project you need at least [Git](https://git-scm.com) and [Node](https://nodejs.org).
