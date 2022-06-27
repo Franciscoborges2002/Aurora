@@ -25,8 +25,8 @@
 </p>
 
 ## About <a name="about"></a>
-I made this project in the event of [RocketSeat](https://www.rocketseat.com.br/) called Ignite Lab that is being presented by [Diego Fernandes](https://github.com/diego3g).
-But i wanted something more with the project so i renamed Aurora and started making some adjustments.
+I made this project in the event of [RocketSeat](https://www.rocketseat.com.br/) called Ignite Lab that is being presented by [Diego Fernandes](https://github.com/diego3g).<br />
+But i wanted something more with the project so i renamed Aurora and started making some adjustments.<br />
 So this is my version of the main project of Ignite Lab, hope you like it :)
 
 ## 🧰 Tech used <a name="tech-used"></a>
@@ -52,7 +52,7 @@ You can see the layout thourh [Figma](https://www.figma.com/community/file/11207
 - [x] All Lessons 5/5
 - [ ] Extra Mile
     - [x] Placeholder when no video is clicked
-    - [ ] Main page to Aurora
+    - [x] Main page to Aurora
     - [x] Políticas de Privacidade Page protopype
     - [x] Loading Page
     - [x] Participants Page
