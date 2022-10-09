@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     backgroundImage: {
       blur: 'url(/src/assets/blur-background.png)',
-      igniteLabWallpaper: 'url(/src/assets/ignite-lab-wallpaper.png)'
+      igniteLabWallpaper: 'url(/src/assets/ignite-lab-wallpaper.png)',
+      mainPage: 'url(/src/assets/SVG/mainBG.svg)'
     },
     screens: {
       'sm': '640px',

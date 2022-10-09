@@ -11,8 +11,11 @@ export function Footer(){
                     Made in Ignite Lab by <a href="https://github.com/Franciscoborges2002" className="text-colors-green-300 hover:text-colors-green-700 transition-colors">Francisco Borges</a>.
                 </span>
             </div>
-            <span>
-                <a href="/pep" className="text-colors-gray-300 hover:text-colors-green-300 transition-colors"> Políticas de privacidade.</a>
+            <span className="flex flex-row">
+                <p className="p-1">
+                    Free SVG Background by <a target="_blank" href="https://bgjar.com" className="text-colors-gray-300 hover:text-colors-green-300 transition-colors">BGJar</a>
+                </p>
+                <a href="/pep" className="text-colors-gray-300 hover:text-colors-green-300 transition-colors p-1"> Políticas de privacidade.</a>
             </span>
         </footer>
     );

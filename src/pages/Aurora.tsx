@@ -3,7 +3,7 @@ import { Footer } from "../components/Footer";
 
 export function Aurora() {
     return(
-        <div className="min-h-screen bg-blur bg-cover bg-no-repeat">
+        <div className="min-h-screen bg-mainPage bg-cover bg-no-repeat bg-opacity-0">
             <div className="flex items-end justify-end p-5">
                 <button
                     className="p-5 bg-colors-green-300 uppercase py-4 rounded font-bold text-sm hover:bg-colors-green-500 transition-colors disabled:opacity-50"
@@ -37,10 +37,11 @@ export function Aurora() {
                         <span className="font-bold text-2xl text-colors-orange-500">Phoenix CSS</span>
                     </a>
                 </div>
-                <span className="flex items-center justify-center text-2xl">
-                    Total of projects:<strong className="text-colors-green-300">15</strong>
+                <span className="flex items-center justify-center text-2xl p-7">
+                    Total of projects:<strong className="text-colors-green-300"> 15</strong>
                 </span>
             </div>
+            <Footer />
         </div>
     );
 }
